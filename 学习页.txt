@@ -1,0 +1,95 @@
+//课程学习页页面展示
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("itemtype", "term")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800001", "-", map)
+
+//课程学习页页面点击课时学习
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "catelog")
+map.put("itemtype", "见sheet3各种unit定义")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800002", "-", map)
+
+//课程学习页点击叫做作业||查看作业||补交作业等按钮
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "catelog")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800003", "-", map)
+
+//课程学习页页面点击去购买
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "Validity_enroll")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800004", "-", map)
+
+//课程学习页页面点击分享
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "share")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800005", "-", map)
+
+//课程学习页页面点击课程详情
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "goto_courseintrodution")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800006", "-", map)
+
+//课程学习页页面点击封面按钮
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "video_play")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800007", "-", map)
+
+//课程学习页页面购买场景加载
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "term_fee_enroll")
+.getInstance().traceLogAndDa("800008", "-", map)
+
+//课程学习页页面点击领取优惠券
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "term_fee_enroll")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800009", "-", map)
+
+//课程学习页页面点击暂不购买||立即购买
+Map<String, String> map = new HashMap<>();
+map.put("pagename", "term_learn")
+map.put("Scenes", "term_fee_enroll")
+map.put("itemtype", "button")
+map.put("itemid", "termid")
+map.put("itemname", "term_name")
+map.put("itemurl", "xxxx")
+.getInstance().traceLogAndDa("800010", "-", map)
+
