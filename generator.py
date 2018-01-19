@@ -1,15 +1,15 @@
 from parser import parse_file
 
 
-def generate_code_file(input_file, table_name, output_file):
-    """生成代码文件"""
-    with open(output_file, 'wb') as f:
-        rows = parse_file(input_file, table_name)
-        for row in rows:
-            generate_map(f, row)
+# def generate_code_file(input_file, table_name, output_file):
+#     """生成代码文件"""
+#     with open(output_file, 'wb') as f:
+#         rows = parse_file(input_file, table_name)
+#         for row in rows:
+#             generate_map(f, row)
 
 
-def generate_code_file(input_file, table_name, output_file, start, end):
+def generate_code_file(input_file, table_name, output_file, start=0, end=0):
     """生成代码文件"""
     with open(output_file, 'wb') as f:
         rows = parse_file(input_file, table_name, start, end)

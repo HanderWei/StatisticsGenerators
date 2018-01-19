@@ -4,23 +4,27 @@ import re
 key_value_p = re.compile('\w*[:]+\s*\w*')
 
 
-def parse_file(file_name, table_name):
+# def parse_file(file_name, table_name):
+#     """解析文件, 返回数据字典列表"""
+#     wb = load_workbook(filename=file_name)
+#     ws = wb[table_name]
+#     result_list = []
+#     for row in ws.rows:
+#         if should_parse_this_row(row):
+#             result_list.append(parse_row(row))
+#     return result_list
+
+
+def parse_file(file_name, table_name, start=0, end=0):
     """解析文件, 返回数据字典列表"""
     wb = load_workbook(filename=file_name)
     ws = wb[table_name]
     result_list = []
-    for row in ws.rows:
-        if should_parse_this_row(row):
-            result_list.append(parse_row(row))
-    return result_list
-
-
-def parse_file(file_name, table_name, start, end):
-    """解析文件, 返回数据字典列表"""
-    wb = load_workbook(filename=file_name)
-    ws = wb[table_name]
-    result_list = []
-    for row in ws.iter_rows(min_row=start, max_row=end):
+    if start == 0 and end == 0:
+        rows = ws.rows
+    else:
+        rows = ws.iter_rows(min_row=start, max_row=end)
+    for row in rows:
         if should_parse_this_row(row):
             result_list.append(parse_row(row))
     return result_list
