@@ -1,3 +1,399 @@
+{
+    StatItem item = new StatItem("100000", "欢迎画面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000005", "开机引导画面的开启编程之旅的按钮", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200001", "登录注册页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200002", "点击登录按钮", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200003", "点击免费注册", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200004", "点击忘记密码", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200005", "注册页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200006", "点击注册", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200007", "找回密码页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200008", "设置密码页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200009", "找回密码页面点击下一步", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("200010", "设置新密码页面点击完成", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("400001", "登录报错消息框展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("400002", "登录报错消息框点击取消", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("400003", "登录报错消息框点击重新登录", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500001", "选课页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500002", "选课页面banner加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500003", "banner内容曝光", "item_exposure", "item_exposure")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500004", "开启启动画面tab切换（左右切换）", "tab_select", "tab_select")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500005", "banner内容点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500006", "选课页面课程体系tab切换（暂无）", "tab_select", "tab_select")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("500007", "选课页面课程体系课程点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600001", "课程详情页面上展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600002", "课程详情页面预览视频点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600003", "课程详情页面选择tab", "tab_select", "tab_select")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600004", "课程详情页面优惠场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600005", "课程详情页面点击优惠券", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600006", "课程详情页面点击已有优惠券", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600007", "课程详情页可领优惠券场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600008", "课程详情页可领优惠券场景点击领取", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600009", "课程详情页面tab选择", "tab_select", "tab_select")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600010", "课程介绍页介绍场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600011", "课程介绍页介绍目录加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600012", "课程介绍页点击课程服务", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600013", "课程介绍页点击咨询", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600014", "课程介绍页点击电话", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600015", "课程介绍页点击立即参加", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600016", "课程详情页面立即参加学期选择场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600017", "课程详情页面物品点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("600018", "课程详情页课时单元点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("700001", "我的学习页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("700002", "我的课程点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("700003", "未登录用户点击登录", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("700004", "未选课用户点击选课", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800001", "课程学习页页面展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800002", "课程学习页页面点击课时学习", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800003", "课程学习页点击叫做作业||查看作业||补交作业等按钮", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800004", "课程学习页页面点击去购买", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800005", "课程学习页页面点击分享", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800006", "课程学习页页面点击课程详情", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800007", "课程学习页页面点击封面按钮", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800008", "课程学习页页面购买场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800009", "课程学习页页面点击领取优惠券", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("800010", "课程学习页页面点击暂不购买||立即购买", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("900001", "内部webview的访问事件", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000001", "我的页面", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000002", "点击账号信息", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000003", "点击消息", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000004", "点击订单", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000005", "点击优惠券", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000006", "点击网络设置", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000007", "点击消息缓存", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000008", "点击已经反馈", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000009", "点击评分", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000010", "点击关于我们", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem("1000011", "点击退出登录", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
 //欢迎画面展示
 Map<String, String> map = new HashMap<>();
 map.put("pagename", "boot")

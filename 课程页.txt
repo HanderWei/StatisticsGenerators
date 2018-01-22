@@ -1,159 +1,267 @@
+{
+    StatItem item = new StatItem(600001, "课程详情页面上展示", "page_view", "page_view")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600002, "课程详情页面预览视频点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600003, "课程详情页面选择tab", "tab_select", "tab_select")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600004, "课程详情页面优惠场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600005, "课程详情页面点击优惠券", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600006, "课程详情页面点击已有优惠券", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600007, "课程详情页可领优惠券场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600008, "课程详情页可领优惠券场景点击领取", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600009, "课程详情页面tab选择", "tab_select", "tab_select")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600010, "课程介绍页介绍场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600011, "课程介绍页介绍目录加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600012, "课程介绍页点击课程服务", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600013, "课程介绍页点击咨询", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600014, "课程介绍页点击电话", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600015, "课程介绍页点击立即参加", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600016, "课程详情页面立即参加学期选择场景加载", "scenes_load", "scenes_load")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600017, "课程详情页面物品点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
+{
+    StatItem item = new StatItem(600018, "课程详情页课时单元点击", "item_click", "item_click")
+    array.append(item.getId(), item);
+}
+
+
 //课程详情页面上展示
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("itemtype", "course")
-map.put("itemid", "courseid")
-map.put("itemname", "course_course")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600001", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "course");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "courseid");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "course_course");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600001, "-", map);
 
 //课程详情页面预览视频点击
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "pre_video")
-map.put("itemtype", "video")
-map.put("itemid", "videoid")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600002", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "pre_video");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "video");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "videoid");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600002, "-", map);
 
 //课程详情页面选择tab
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "term_select")
-map.put("itemtype", "term")
-map.put("itemid", "termid")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600003", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "term_select");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "term");                              
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "termid");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600003, "-", map);
 
 //课程详情页面优惠场景加载
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "coupon")
-.getInstance().traceLogAndDa("600004", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "coupon");
+CourseDetailStatistics.getInstance().traceLogAndDa(600004, "-", map);
 
 //课程详情页面点击优惠券
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "coupon")
-map.put("itemtype", "button")
-map.put("itemid", "videoid")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600005", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "coupon");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "videoid");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600005, "-", map);
 
 //课程详情页面点击已有优惠券
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "coupon")
-map.put("itemtype", "button")
-map.put("itemid", "videoid")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600006", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "coupon");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "videoid");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600006, "-", map);
 
 //课程详情页可领优惠券场景加载
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "user_can_obtain_coupon")
-.getInstance().traceLogAndDa("600007", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "user_can_obtain_coupon");
+CourseDetailStatistics.getInstance().traceLogAndDa(600007, "-", map);
 
 //课程详情页可领优惠券场景点击领取
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "user_can_obtain_coupon")
-map.put("itemtype", "button")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600008", "None", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "user_can_obtain_coupon");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600008, "None", map);
 
 //课程详情页面tab选择
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "tab_select")
-map.put("itemtype", "xxxx")
-map.put("itemid", "xxxx")
-map.put("itemname", "tab文字")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600009", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "tab_select");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "tab文字");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600009, "-", map);
 
 //课程介绍页介绍场景加载
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "introduction")
-.getInstance().traceLogAndDa("600010", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "introduction");
+CourseDetailStatistics.getInstance().traceLogAndDa(600010, "-", map);
 
 //课程介绍页介绍目录加载
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "catelog")
-.getInstance().traceLogAndDa("600011", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "catelog");
+CourseDetailStatistics.getInstance().traceLogAndDa(600011, "-", map);
 
 //课程介绍页点击课程服务
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "course_server")
-map.put("itemtype", "button")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600012", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "course_server");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600012, "-", map);
 
 //课程介绍页点击咨询
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "course_advisory")
-map.put("itemtype", "button")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600013", "None", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "course_advisory");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600013, "None", map);
 
 //课程介绍页点击电话
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "course_phone")
-map.put("itemtype", "button")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600014", "None", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "course_phone");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600014, "None", map);
 
 //课程介绍页点击立即参加
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "course_enroll")
-map.put("itemtype", "button")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600015", "None", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "course_enroll");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "button");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600015, "None", map);
 
 //课程详情页面立即参加学期选择场景加载
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "enroll_termselect")
-.getInstance().traceLogAndDa("600016", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "enroll_termselect");
+CourseDetailStatistics.getInstance().traceLogAndDa(600016, "-", map);
 
 //课程详情页面物品点击
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "enroll_termselect")
-map.put("itemtype", "term")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600017", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "enroll_termselect");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "term");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600017, "-", map);
 
 //课程详情页课时单元点击
 Map<String, String> map = new HashMap<>();
-map.put("pagename", "course_introduction")
-map.put("Scenes", "catelog")
-map.put("itemtype", "见sheet3各种unit定义")
-map.put("itemid", "xxxx")
-map.put("itemname", "xxxxe")
-map.put("itemurl", "xxxx")
-.getInstance().traceLogAndDa("600018", "-", map)
+map.put(StatisticAttributesKeyConstant.PAGE_NAME, "course_introduction");
+map.put(StatisticAttributesKeyConstant.SCENE, "catelog");
+map.put(StatisticAttributesKeyConstant.ITEM_TYPE, "见sheet3各种unit定义");
+map.put(StatisticAttributesKeyConstant.ITEM_ID, "xxxx");
+map.put(StatisticAttributesKeyConstant.ITEM_NAME, "xxxxe");
+map.put(StatisticAttributesKeyConstant.ITEM_URL, "xxxx");
+CourseDetailStatistics.getInstance().traceLogAndDa(600018, "-", map);
 
